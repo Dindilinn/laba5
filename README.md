@@ -30,21 +30,6 @@
 
 ---
 
-## 📁 Структура проекта
-src/
-└── airportapp/
-├── Main.java # Точка входа
-├── model/ # Классы данных и работа с БД
-│ ├── Tariff.java
-│ ├── Airport.java # ← содержит SQLite-логику
-│ ├── DiscountStrategy.java
-│ ├── FixedDiscount.java
-│ ├── NoDiscount.java
-│ └── InvalidTariffException.java
-└── view/ # GUI-компоненты
-├── MainWindow.java
-└── TariffEditDialog.java
-
 ---
 
 ## 🗃️ База данных
@@ -53,7 +38,6 @@ src/
 - Файл базы создаётся автоматически при первом запуске:  
   **`/Users/ваше_имя/airport.db`** (на macOS/Linux).
 - Все операции (добавление, удаление, поиск) выполняются напрямую через SQL-запросы.
-- Для просмотра содержимого можно использовать [DB Browser for SQLite](https://sqlitebrowser.org/).
 
 ---
 
